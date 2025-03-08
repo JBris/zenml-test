@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zenml-test"
+version = "0.1.0"
+description = ""
+authors = ["James Bristow <jbris@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+zenml = {extras = ["server"], version = "^0.75.0"}
+notebook = "^7.3.2"
+torch = "^2.6.0"
+transformers = {extras = ["torch"], version = "^4.49.0"}
+sentencepiece = "^0.2.0"
+protobuf = "^6.30.0"
+datasets = "^3.3.2"
+pyarrow = "^19.0.1"
+scikit-learn = "^1.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
